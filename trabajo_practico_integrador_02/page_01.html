@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/page_01.css">
+    <title>trabajo_practico_integrador_02</title>
+</head>
+<body>
+    <!-- start nav -->
+    <header>        
+        <div class="logo"><img src="public/img/codoacodo.png" alt="">
+            <a href="index.html" class="link_00">Conf Bs As</a>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a class="link_01" href="index.html" style="color: #FFFFFF;">La conferencia</a></li>
+                <li><a class="link_01" href="">Los oradores</a></li>
+                <li><a class="link_01" href="">El lugar y la fecha</a></li><li><a class="link_01" href="">Conviértete en orador</a></li>
+                <li><a class="link_01" style="color: #29a744;" href="">Comprar tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end nav -->
+    <!-- start section_01 -->
+    <section class="section_01">
+        <div class="category_01">
+            <div class="category_02"><b>Estudiante<br></b><p>Tienen un descuento</p><br><b>80%</b><br><p class="p_01">* presentar documentación</p></div>
+            <div class="category_02"><b>Trainee<br></b><p>Tienen un descuento</p><br><b>50%</b><br><p class="p_01">* presentar documentación</p></div>
+            <div class="category_02"><b>Junior<br></b><p>Tienen un descuento</p><br><b>15%</b><br><p class="p_01">* presentar documentación</p></div>
+        </div>
+        <div class="title_01">
+            <p>VENTA</p><br><p class="p_02">VALOR DE TICKET $200</p>
+    <!-- start form_01 -->
+        </div>
+        <div class="form_box">
+            <form action="" method="get" class="form_01">
+                <div class="input_01">
+                    <input type="text" class="name" placeholder="Nombre">
+                    <input type="text" class="name" placeholder="Apellido">
+                </div>
+                <input type="text" class="email" placeholder="Correo">
+                <div class="input_02">
+                    <p class="p_03">Cantidad</p><p class="p_03">Categoría</p>
+                </div>
+                <div class="input_03">
+                    <input type="number" id="value_01" placeholder="Cantidad" class="input_04" max="99" onchange="f_01()">
+                    <select name="category" id="value_02" class="input_05" onchange="f_02()">
+                        <option value="op_00">---Seleccionar---</option>
+                        <option value="op_01" >Estudiante</option>
+                        <option value="op_02" >Trainee</option>
+                        <option value="op_03" >Junior</option>
+                    </select>
+                </div>
+                <div class="input_06">
+                    <div class="result_01" ><p>Total a pagar: </p><div class="result_02" id="result_01"></div></div>
+                    <div class="input_07">
+                        <button class="input_08" type="reset" onclick="f_04()">Borrar</button>
+                        <button type="button" onclick="f_03()" class="input_08">Resumen</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <!-- end form_01 -->
+    </section>
+    <!-- end section_01 --> 
+
+    <!-- star footer -->
+    <footer>
+        <ul class="footer_links">
+            <li><a class="link_03" href="">Preguntas<br>frecuentes</a></li>
+            <li><a class="link_03" href="">Contactanos</a></li>
+            <li><a class="link_03" href="">Prensa</a></li>
+            <li><a class="link_03" href="">Conferencias</a></li>
+            <li><a class="link_03" href="">Términos y<br>condiciones</a></li>
+            <li><a class="link_03" href="">Privacidad</a></li>
+            <li><a class="link_03" href="">Estudiantes</a></li>
+        </ul>
+    </footer>
+    <!-- end footer -->
+    <script src="public/js/page_01.js"></script>
+</body>
+</html>

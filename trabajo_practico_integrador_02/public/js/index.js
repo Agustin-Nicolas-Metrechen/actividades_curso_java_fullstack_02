@@ -1,0 +1,1 @@
+alert("Clic en el botón comprar tickets para ir al trabajo práctico integrador 02");
